@@ -4,106 +4,168 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Coisa de Tchola</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    font-family: 'Poppins', sans-serif;
-    background: #1c1c1c;
-    color: #ffffff;
-    line-height: 1.8;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #1c1c1c;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3, h4 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background: #f2c94c;
+  margin: 25px auto 40px auto;
+  border-radius: 10px;
+}
+
+/* ===== COLUNAS DO DIÁRIO ===== */
+.diario-colunas {
+  display: flex;
+  gap: 30px;
+}
+
+.lado-esquerdo,
+.lado-direito {
+  width: 50%;
+}
+
+.lado-direito {
+  background: rgba(242, 201, 76, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  text-align: justify;
+  white-space: pre-line;
+  margin-bottom: 12px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .diario-colunas {
+    flex-direction: column;
   }
-  main {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 20px 30px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+
+  .lado-esquerdo,
+  .lado-direito {
+    width: 100%;
   }
-  h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .divider {
-    width: 60px;
-    height: 3px;
-    background: #f2c94c;
-    margin: 20px auto 40px auto;
-    border-radius: 10px;
-  }
-  p {
-    font-size: 1.2rem;
-    text-align: justify;
-    white-space: pre-line; /* Mantém quebras de linha do texto */
-  }
-  footer {
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 0.9rem;
-    color: #f2c94c;
-  }
-  .fade { opacity: 0; transform: translateY(30px); transition: all 1s ease; }
-  .fade.show { opacity: 1; transform: translateY(0); }
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  color: #f2c94c;
+}
 </style>
 </head>
+
 <body>
 
 <main class="fade">
-  <h1>Desabafos do caduco para caduco(esquizofrenia)</h1>
-  <h3>Acho que isso é tipo um diário(bem tchola) mas para treinar vai ser digital, você começou isso 16/12 caduco :)</h3>
-  <h4> Senha do arquivo no pc: cadu&sofia2407-1308</h4>
-  <h4>Dias antigos salvos na pasta!</h4>
+
+  <h1>Desabafos do caduco para caduco</h1>
+  <h3>Coisa de tchola pra falar da vida</h3>
+  <h3>Dias antigos estão na pasta!</h3>
+
   <div class="divider"></div>
- <p>16/12/2025</p><br>
- 
-  <p>
-    To fazendo isso aqui porque ninguém vai ver logo não taxado de tchola por ter um diáriozinho online, mas vou deixar meus problemas aqui.
-    (Ainda mais que tenho problema de memória e isso me ajuda a lembrar de todos os dias)
-  </p><br>
-  <p>Hoje é dia 16/12 e foi um dia meio esquisito pq o clima não tava legal entre Eu e a Sofia por uma situação em que me incomodei com algo que aconteceu e isso desencadeou uma certa discussão.
-  </p><br>
-  <p>Sinceramente, eu acho que eu ter me chateado é totalmente compreensível pq considerei algo chato, mas não quis falar muito sobre isso.</p><br>
-  <p> Nesse momento eu to com um sentimento estranho pq nao sei bem oq ela pensa realmente sobre essa situação. (Se quiser lembrar, 16/12 umas 19h, busca no zap)</p><br>
-  <p>PRINCIPAIS PONTOS COLOCADOS POR ELA E TU NÃO PODE ESQUECER! ABAIXO:</p><br>
-  <p>1- Ela sente que eu quero deixar ela como errada nas situações;<br>
-    2- Ela comentou que eu fico desconfortável com tudo. <br>
-  </p>
-  <p>  
-    Bom, começando, eu acho que o motivo de eu ter me chateado hoje é totalmente válido, mas isso acontece e se resolve, oque me pegou foi a forma q ela interpretou o que eu disse.
-  </p> <br>
-  <p>
-   Mesmo eu tendo me chateado com oque aconteceu, eu acho que fiquei mais chateado com o ponto 1 que ela colocou, pq ela disse que eu sempre faço isso ao ponto dela nem se incomodar mais, mas eu não acho que seja verdade.
-  </p><br>
-  <p>Porém ela tem razão de se incomodar com isso pois é uma atitude que, do mesmo jeito que a ação dela de hoje, não é algo legal.</p><br>
-  <p>
-    Desde o início do relacionamento, várias coisas aconteceram mas eu sempre tento resolver e principalmente, fazer ela se sentir bem, pq acho que é o meu papel. <br>
-    fiquei bem decepcionado comigo mesmo por chegar ao ponto de ela dizer que eu faço isso ao ponto dela NEM SE IMPORTAR MAIS, e isso não é oque eu quero.
-  </p><br>
-  <p>Ela disse que percebe que eu tento melhorar, e eu quero que seja verdade. <br>
-  Nossa relação me faz muito bem, essas coisinhas não podem estragar isso.</p>
-  <p>
-    Sobre o ponto 2, eu concordo que eu fico desconfortável com muita coisa, até falei com ela em outro momento sobre isso (dia 14/12 se nao me engano), e ela agiu de uma forma muito boa. <br>
-    Ela foi compreensiva, me entendeu, me ajudou, e fez com que eu enxergasse que eu não era tanto o problema nessa situação. 
-  </p> <br>
-  <p>
-    Mas a forma que ela disse isso hoje me fez parecer que isso é algo chato, mesmo eu me esforçando para que não seja. <br>
-    a situação de hoje foi algo que me incomodou bastante pois é algo que poderia ser evitado, eu tentei nao falar nada demais no calor do momento mas minha cabeça quase explodiu kkkkkkkkkkkkkkk.
-  </p><br>
-  <p>
-    Enfim, por hoje é isso. <br>
-    Vou tentar melhorar nesses pontos pois quero que a Sofia se sempre se sinta bem ao meu lado, pq eu NÃO ACEITO PERDER ESSA MULHER! <br>
-    Tua obrigação agora é tentar ser melhor seu boca aberta, pq ela é o amor da tua vida e tu é apaixonado que nem o cirilo <br>
-    Mas a situação de hoje foi bem chata mesmo, mas eu imagino que ela tenha enxergado isso, sei do esforço que ela tem feito para me ver feliz.
-    Até mais seu gostoso.
-  </p>
 
+  <div class="diario-colunas">
 
+    <!-- ===== LADO ESQUERDO ===== -->
+    <div class="lado-esquerdo">
+      <p><strong>DIA 17/12</strong></p>
 
+      <p>
+      Foi um dia muito bom.
+      </p><br>
+      <p>De manhã eu acordei com a Sofia me ligando, estava no centro e ia vir para a minha casa, já fiquei FACEIRO</p>
+      <br>
+      <p>Ela passou praticamente todo o dia aqui, foi tudo MUITO bom, o clima que estávamos há um bom tempo.</p><br>
+      <p>Um dia antes tínhamos tido um probleminha entre a gente que não conseguimos nos resolver bem na hora, depois de um bom tempo dela aqui eu falei sobre isso para que a gente resolvesse direito </p><br>
+      <p>Entendemos que os dois erramos em alguns pontos e foi um mal-entendido com expressões mal-colocadas ao mesmo tempo.</p><br>
+      <p>Tivemos um tempo chorando bastante, falando sobre nós dois e entendemos que infelizmente, não tem como NÃO ERRAR, mas que podemos aprender com isso e melhorar dia à dia.</p><br>
+      <p>Às vezes tomamos umas decisões e fizemos algumas coisas bobas que acabam machucando um ao outro, mas essss probleminhas não podem atrapalhar oque temos de melhor, o nosso amor.</p><br>
+      <p>Ela cogitou darmos um tempo com o motivo de que "nao quer me chatear" e ali eu comecei a chorar com ela. </p><br>
+      <p>A Sofia é o amor da minha vida, a relação que me mudou e mudou a forma que eu enxergo a vida em geral.</p><br>
+      <p>Sempre faremos coisas que chateiam um ao outro mas isso nunca vai ser maior do que oq temos.</p><br>
+      <p>Ela não me chateia, ela me conforta, ela faz eu me sentir bem comigo e com tudo, a Sofia me encanta todos os dias e me dá vontade de estar com ela cada vez mais.</p><br>
+      <p>E mesmo que ela me chateasse, eu tentaria entender o motivo e buscaríamos uma forma de nos resolver, pq o nosso amor é daqueles que vale a pena, de verdade.</p> <br>
+      <p>Ela entendeu isso, mesmo se a gente errar, devemos entender que erramos, nos desculpar, e buscar melhorar.</p><br>
+      <p>Vou seguir sempre conversando sobre tudo, pois assim, nos resolvemos e vivemos bem.</p>
+      <p>Até amanhã, Caduco.</p>
 
+    </div>
 
+    <!-- ===== LADO DIREITO ===== -->
+    <div class="lado-direito">
+      <p><strong>Dia 18/12</strong></p>
 
+      <p>
+      Hoje foi um dia bem corrido
+      </p>
+      <p>Meu primeiro dia de vendas das saladas de frutas e eu percebi que realmente pode dar certo, me senti orgulhoso de mim mesmo.</p><br>
+      <p>Peguei o primeiro dinheiro, comprei mais frutas e gastei a outra metade em um presentinho pro meu amor hehehehe ela vai amar</p><br>
+      <p>Tive bastante tempo na rua e estava bem preocupado com a Sofia por umas dores q ela está sentindo e eu espero que ela tente descobrir logo oque é, estou bem preocupado com isso.</p> <br>
+      <p>De certa forma, foi um dia mais calmo.</p> <br>
+      <p>Queria ter ido ver a Sofia mas ela foi pra casa da avó, não deu para nos vermos hoje mas amanhã eu vou lá ver ela</p><br>   
+      <p>No fim da noite aconteceu uma coisa bem confusa sobre o instagram, não tinha dado bola até ela terminar a conversa com um "Fica falando sozinho". Eu fiquei boiando sem entender KKKKKKKKKKK mas imagino que ela esteja aborrecida com algo e nao queira muito papo talvez.</p><br>
+      <p>Foi algo bem confuso pois ela tinha falado algo sobre coisas do passado e etc, e eu do meu jeitinho de matar e morrer por ciúmes já não quis saber muito oq era, depois tirei isso da cabeça e fui ver, aí deu toda a função</p><br>
+      <p>Não deve ser nada além de um mal entendido mas gostaria q ela me explicasse pq falou de outra pessoa que tinha o login da conta e nao era uma amiga, mas enfim, isso é coisa boba.</p> <br>
+      <p>Talvez ela tenha pensado que eu achei q ela tava escondendo algo ou esse tipo de coisa, mas eu só tava sem entender NADA mesmo KKKKKKKKKKKKKK</p>
+      <p>Estou terminando de escrever isso as 01:20, vou tentar dormir pois amanhã o dia talvez seja corrido de novo.</p><br>
+      <p>To ansioso para as vendas e para ver meu amor pq to com saudade DKSJAKJADSKD</p> 
+      <p>Até amanhã, caduco.</p>
+
+    </div>
+
+  </div>
 
 </main>
 
@@ -112,16 +174,17 @@
 </footer>
 
 <script>
-  const elements = document.querySelectorAll('.fade');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting) entry.target.classList.add('show');
-    });
-  }, { threshold: 0.2 });
-  elements.forEach(el => observer.observe(el));
+const elements = document.querySelectorAll('.fade');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
 </script>
 
 </body>
 </html>
-
-
