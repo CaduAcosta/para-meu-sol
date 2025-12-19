@@ -1,4 +1,133 @@
-<p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coisa de Tchola</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #1c1c1c;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+main {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background: #f2c94c;
+  margin: 25px auto 40px auto;
+  border-radius: 10px;
+}
+
+/* ===== COLUNAS ===== */
+.diario-colunas {
+  display: flex;
+  gap: 25px;
+}
+
+.coluna-esquerda,
+.coluna-meio,
+.coluna-direita {
+  width: 33.33%;
+}
+
+.coluna-esquerda {
+  opacity: 0.4;
+}
+
+.coluna-direita {
+  background: rgba(242, 201, 76, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 1.05rem;
+  text-align: justify;
+  white-space: pre-line;
+  margin-bottom: 12px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .diario-colunas {
+    flex-direction: column;
+  }
+
+  .coluna-esquerda,
+  .coluna-meio,
+  .coluna-direita {
+    width: 100%;
+  }
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  color: #f2c94c;
+}
+</style>
+</head>
+
+<body>
+
+<main class="fade">
+
+  <h1>Desabafos do caduco para caduco</h1>
+  <h3>Coisa de tchola pra falar da vida</h3>
+  <h3>Dias antigos estão na pasta!</h3>
+
+  <div class="divider"></div>
+
+  <div class="diario-colunas">
+
+    <!-- ===== ESQUERDA (VAZIA) ===== -->
+    <div class="coluna-esquerda">
+      <p><strong>DIA 16/12</strong></p>
+      <p>
 To fazendo isso aqui porque ninguém vai ver logo não taxado de tchola por ter um diáriozinho online, mas vou deixar meus problemas aqui.
 (Ainda mais que tenho problema de memória e isso me ajuda a lembrar de todos os dias)
 </p>
@@ -87,3 +216,65 @@ Mas a situação de hoje foi bem chata mesmo, mas eu imagino que ela tenha enxer
 <p>
 Até mais seu gostoso.
 </p>
+
+    </div>
+
+    <!-- ===== MEIO (DIA 17) ===== -->
+    <div class="coluna-meio">
+      <p><strong>DIA 17/12</strong></p>
+
+      <p>Foi um dia muito bom.</p><br>
+      <p>De manhã eu acordei com a Sofia me ligando, estava no centro e ia vir para a minha casa, já fiquei FACEIRO</p><br>
+      <p>Ela passou praticamente todo o dia aqui, foi tudo MUITO bom, o clima que estávamos há um bom tempo.</p><br>
+      <p>Um dia antes tínhamos tido um probleminha entre a gente que não conseguimos nos resolver bem na hora, depois de um bom tempo dela aqui eu falei sobre isso para que a gente resolvesse direito</p><br>
+      <p>Entendemos que os dois erramos em alguns pontos e foi um mal-entendido com expressões mal-colocadas ao mesmo tempo.</p><br>
+      <p>Tivemos um tempo chorando bastante, falando sobre nós dois e entendemos que infelizmente, não tem como NÃO ERRAR, mas que podemos aprender com isso e melhorar dia à dia.</p><br>
+      <p>Às vezes tomamos umas decisões e fizemos algumas coisas bobas que acabam machucando um ao outro, mas essss probleminhas não podem atrapalhar oque temos de melhor, o nosso amor.</p><br>
+      <p>Ela cogitou darmos um tempo com o motivo de que "nao quer me chatear" e ali eu comecei a chorar com ela.</p><br>
+      <p>A Sofia é o amor da minha vida, a relação que me mudou e mudou a forma que eu enxergo a vida em geral.</p><br>
+      <p>Sempre faremos coisas que chateiam um ao outro mas isso nunca vai ser maior do que oq temos.</p><br>
+      <p>Ela não me chateia, ela me conforta, ela faz eu me sentir bem comigo e com tudo, a Sofia me encanta todos os dias e me dá vontade de estar com ela cada vez mais.</p><br>
+      <p>E mesmo que ela me chateasse, eu tentaria entender o motivo e buscaríamos uma forma de nos resolver, pq o nosso amor é daqueles que vale a pena, de verdade.</p><br>
+      <p>Ela entendeu isso, mesmo se a gente errar, devemos entender que erramos, nos desculpar, e buscar melhorar.</p><br>
+      <p>Vou seguir sempre conversando sobre tudo, pois assim, nos resolvemos e vivemos bem.</p>
+      <p>Até amanhã, Caduco.</p>
+    </div>
+
+    <!-- ===== DIREITA (DIA 18) ===== -->
+    <div class="coluna-direita">
+      <p><strong>DIA 18/12</strong></p>
+
+      <p>Hoje foi um dia bem corrido</p>
+      <p>Meu primeiro dia de vendas das saladas de frutas e eu percebi que realmente pode dar certo, me senti orgulhoso de mim mesmo.</p><br>
+      <p>Peguei o primeiro dinheiro, comprei mais frutas e gastei a outra metade em um presentinho pro meu amor hehehehe ela vai amar</p><br>
+      <p>Tive bastante tempo na rua e estava bem preocupado com a Sofia por umas dores q ela está sentindo e eu espero que ela tente descobrir logo oque é, estou bem preocupado com isso.</p><br>
+      <p>De certa forma, foi um dia mais calmo.</p><br>
+      <p>Queria ter ido ver a Sofia mas ela foi pra casa da avó, não deu para nos vermos hoje mas amanhã eu vou lá ver ela</p><br>
+      <p>No fim da noite aconteceu uma coisa bem confusa sobre o instagram, não tinha dado bola até ela terminar a conversa com um "Fica falando sozinho".</p><br>
+      <p>Foi algo bem confuso pois ela tinha falado algo sobre coisas do passado e etc.</p><br>
+      <p>Não deve ser nada além de um mal entendido.</p><br>
+      <p>Estou terminando de escrever isso as 01:20.</p><br>
+      <p>Até amanhã, caduco.</p>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  De Caduco.
+</footer>
+
+<script>
+const elements = document.querySelectorAll('.fade');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('show');
+  });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
