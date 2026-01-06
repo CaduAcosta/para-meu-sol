@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Coisa de Tchola</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desabafos</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -15,27 +15,22 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   background: #1c1c1c;
   color: #ffffff;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.8;
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 50px auto;
-  padding: 25px;
+  padding: 30px;
   background: rgba(255,255,255,0.05);
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 h1, h3 {
   text-align: center;
-}
-
-h1 {
-  margin-bottom: 8px;
 }
 
 h3 {
@@ -50,60 +45,42 @@ h3 {
   border-radius: 10px;
 }
 
-/* ===== DUAS COLUNAS ===== */
+/* GRID 3 COLUNAS */
 .diario {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
   gap: 25px;
 }
 
 .coluna {
-  width: 50%;
-  padding: 18px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  white-space: pre-line;
+  text-align: justify;
 }
 
 .coluna-esquerda {
   background: rgba(255,255,255,0.03);
 }
 
-.coluna-direita {
-  background: rgba(242,201,76,0.05);
+.coluna-centro {
+  background: rgba(242,201,76,0.06);
 }
 
-p {
-  font-size: 1.05rem;
-  text-align: justify;
-  white-space: pre-line;
-  margin-bottom: 18px;
+.coluna-direita {
+  background: rgba(255,255,255,0.03);
 }
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
   .diario {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
-
-  .coluna {
-    width: 100%;
-  }
-}
-
-/* animação */
-.fade {
-  opacity: 0;
-  transform: translateY(25px);
-  transition: all 1s ease;
-}
-
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 footer {
   text-align: center;
-  padding: 35px 20px;
-  font-size: 0.9rem;
+  margin-top: 40px;
   color: #f2c94c;
 }
 </style>
@@ -111,7 +88,7 @@ footer {
 
 <body>
 
-<main class="fade">
+<main>
 
   <h1>Desabafos do caduco para caduco</h1>
   <h3>Chegou 2026</h3>
@@ -121,86 +98,54 @@ footer {
 
   <div class="diario">
 
-    <!-- ===== COLUNA ESQUERDA ===== -->
+    <!-- COLUNA 1 -->
     <div class="coluna coluna-esquerda">
-      <p>Fui para a praia no fim do ano com a Sofia.</p>
+Fui para a praia no fim do ano com a Sofia.
 
-      <p>Fiquei com um sentimento estranho durante todos os dias, mas depois se confirmou o que era: problemas com a mãe dela.</p>
+Fiquei com um sentimento estranho durante todos os dias, mas depois se confirmou o que era: problemas com a mãe dela.
 
-      <p>Infelizmente é algo que nos afeta bastante, mas não tenho como fazer nada sobre isso.</p>
+Infelizmente é algo que nos afeta bastante, mas não tenho como fazer nada sobre isso.
 
-      <p>Apesar de tudo, foram dias muito bons ao lado da Sofia. Aproveitei bastante e acho que ela gostou de estar comigo.</p>
+Apesar de tudo, foram dias muito bons ao lado da Sofia.
 
-      <p>Eu espero que a gente consiga melhorar a cada dia, para nos sentirmos melhor um com o outro.</p>
-
-      <p>Sei que ainda vou me esforçar muito para que possamos ficar juntos, e eu quero muito isso.</p>
-
-      <p>Espero que Mãe Iemanjá e todos os orixás e guias nos ajudem.</p>
-
-      <p>Também espero que eu e ela nos esforcemos ao máximo para estarmos juntos e felizes.</p>
-
-      <p>Foi muito bom passar esses dias com ela.</p>
+Foi muito bom passar esses dias com ela.
     </div>
 
-    <!-- ===== COLUNA DIREITA ===== -->
+    <!-- COLUNA 2 (TEXTO COMPLETO, SEM CORTES) -->
+    <div class="coluna coluna-centro">
+Hoje é dia 06/01 e são 02h da madrugada.
+Acabei de chegar de uma sessão de Exu bem boa, Zé deixou vários recados importantes para mim.
+A Sofia estava em dúvida se ia para a sessão ou para o centro, ela até foi na sessão mas pelo jeito saiu mais cedo, acho que foi para o centro depois.
+Enfim, hoje tivemos uma conversa bem importante onde ela me falou coisas bem sérias no final, sobre a ideia dela ser ficarmos juntos assim como é a minha.
+Estamos de volta em Bagé e voltamos à rotina normal.
+Sábado vai ter obrigação de mata e pelo jeito a Sofia vai ir em uma festa sozinha e eu já tô pensando nisso, como sempre.
+Quero conseguir reagir menos quando ela me falar que vai sair sozinha etc, porque da última vez ela disse que eu ficar assim era problema meu e que ela não tinha nada que ver com isso e que só sentia muito por isso ou algo do tipo.
+Na minha cabeça, acho que ela falou da boca pra fora ou sei lá, não bate com o que ela me falou hoje e sempre fala.
+Sei que ela sempre se esforça para estarmos bem, assim como eu.
+Vou tentar reagir o mínimo possível para essas coisas porque pelo que ela disse na nossa última "discussão", vai ser algo mais recorrente, infelizmente.
+Eu não queria isso mas mesmo sentindo assim eu não gosto de discordar ou fazer briga.
+Não quero ser tóxico ou parecer que quero prender ela (como sempre digo kkkkkkkkkkk), ainda mais depois disso tudo.
+Espero ser melhor a cada dia pra não ter necessidade disso.
+De resto, foi um início de ano bem confuso na verdade.
+Sobre eu e a Sofia, só quero que a gente fique bem e que ela se sinta feliz e completa comigo.
+Pelo oque o zé me disse, ela vai ter problemas e decepções SÉRIAS e eu sei bem de que lado vem, espero o momento q mostrem para ela
+Hoje ela me falou umas coisas tão boas, de verdade, e eu sei que ela pensa isso mesmo.
+O resto das coisas sei que mudarão com o tempo, com a maturidade que ganhamos e com o que aprendemos um com o outro.
+Meu maior medo é perder ela ou deixar ela infeliz.
+Eu sei que ela me prioriza acima de tudo então continuo me esforçando para nao pesar em nada.
+Sei que a mãe Iemanjá mostra pra ela que o que eu falo sobre o que sinto é verdade, e ela sabe disso.
+Acima de tudo, eu amo ela.
+Um dia, espero poder mostrar todos esses textos para ela.
+Por enquanto eu acabo me remoendo guardando um pouco HAHAHAHA mas faz parte do processo.
+Ansioso pelo resto de 2026...
+    </div>
+
+    <!-- COLUNA 3 -->
     <div class="coluna coluna-direita">
-      <p>Hoje é dia 06/01 e são 02h da madrugada.</p>
-
-      <p>Acabei de chegar de uma sessão de Exu bem boa. Zé deixou vários recados importantes para mim.</p>
-
-      <p>A Sofia estava em dúvida se ia para a sessão ou para o centro. Ela até foi na sessão, mas pelo jeito saiu mais cedo. Acho que foi para o centro depois.</p>
-
-      <p>Hoje tivemos uma conversa bem importante. No final, ela me falou coisas bem sérias sobre a ideia de ficarmos juntos, que também é a minha.</p>
-
-      <p>O Álvaro me disse que ela falou pra ele que ia embora mais cedo porque a mãe dela estava passando mal, e pra mim ela disse outra coisa. Mas sei lá.</p>
-
-      <p>Estamos de volta em Bagé e voltamos à rotina normal.</p>
-
-      <p>Sábado vai ter obrigação de mata e, pelo jeito, a Sofia vai ir em uma festa sozinha. Eu já tô pensando nisso, como sempre.</p>
-
-      <p>Vou estar em obrigação, então não vou dizer nada sobre. Não é nada demais também.</p>
-
-      <p>Quero conseguir reagir menos quando ela me falar que vai sair sozinha e coisas assim. Da última vez, ela disse que eu ficar assim era problema meu e que ela não tinha nada a ver com isso. Eu tenho a mania de nunca esquecer o que é dito kkkkkkkk.</p>
-
-      <p>Minha cabeça tenta pensar que talvez ela tenha falado da boca pra fora. Sei lá. Não bate com o que ela me falou hoje e com o que sempre fala.</p>
-
-      <p>Sei que ela sempre se esforça para estarmos bem, assim como eu.</p>
-
-      <p>Vou tentar reagir o mínimo possível para essas coisas, porque pelo que ela disse na nossa última “discussão”, isso vai ser mais recorrente, infelizmente.</p>
-
-      <p>Eu não queria isso, mas mesmo sentindo assim eu não gosto de discordar ou fazer briga.</p>
-
-      <p>Não quero ser tóxico ou parecer que quero prender ela. Ainda mais depois disso que ela me falou.</p>
-
-      <p>Espero ser melhor a cada dia pra não ter necessidade disso.</p>
-
-      <p>De resto, foi um início de ano bem confuso, na verdade.</p>
-
-      <p>Sobre eu e a Sofia, só quero que a gente fique bem e que ela se sinta feliz e completa comigo.</p>
-
-      <p>Pelo que o Zé deixou dito pra mim, algumas coisas vão pesar e eu sei bem de onde vêm, mas acho que não tenho coragem de dizer. Até porque eu ficaria como errado.</p>
-
-      <p>Hoje ela me falou coisas tão boas, de verdade, e eu sei que ela pensa isso mesmo.</p>
-
-      <p>O resto das coisas sei que mudarão com o tempo, com a maturidade que ganhamos e com o que aprendemos um com o outro.</p>
-
-      <p>Meu maior medo é perder ela ou deixar ela infeliz.</p>
-
-      <p>Eu sei que ela me prioriza acima de tudo, então vou tentar ao máximo não falar sobre essas coisas de sair e tals. Vou me esforçar.</p>
-
-      <p>Sei que Mãe Iemanjá mostra pra ela que o que eu falo sobre o que sinto é verdade, e ela sabe disso.</p>
-
-      <p>Acima de tudo, eu amo ela.</p>
-
-      <p>Um dia, espero poder mostrar todos esses textos para ela.</p>
-
-      <p>Por enquanto eu acabo me remoendo um pouco, mas faz parte do processo.</p>
-
-      <p>Confio nela e me entreguei totalmente na nossa relação. Sei que vai valer a pena.</p>
-
-      <p>Eu sou cheio de problemas, mas nenhum deles é não amar ela. Sei que ela sabe disso, e isso me conforta.</p>
-
-      <p>Ansioso pelo resto de 2026.</p>
+Estou muito preocupado com ela em relação à mãe dela.
+Ela tem passado por muitos problemas e vários relacionados à mim, tenho medo de acabar trazendo problemas para a vida dela.
+Espero que as coisas melhorem e que possamos continuar juntos pois estou disposto a passar pelo o que for, mas não quero que ela fique mal por culpa minha.
+Espero que tudo melhore de vez e que ela siga do meu lado, como sempre.
     </div>
 
   </div>
@@ -208,17 +153,8 @@ footer {
 </main>
 
 <footer>
-  De Caduco.
+De Caduco.
 </footer>
-
-<script>
-const el = document.querySelector('.fade');
-const obs = new IntersectionObserver(entries => {
-  if (entries[0].isIntersecting) el.classList.add('show');
-}, { threshold: 0.2 });
-
-obs.observe(el);
-</script>
 
 </body>
 </html>
