@@ -22,7 +22,7 @@
     }
 
     main {
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 50px auto;
       padding: 30px;
       background: rgba(255,255,255,0.05);
@@ -46,11 +46,11 @@
       border-radius: 10px;
     }
 
-    /* DUAS COLUNAS */
+    /* 3 COLUNAS */
     .diario {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 25px;
     }
 
     .coluna {
@@ -61,8 +61,12 @@
       background: rgba(255,255,255,0.04);
     }
 
+    .coluna-centro {
+      background: rgba(242,201,76,0.07);
+    }
+
     /* RESPONSIVO */
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
       .diario {
         grid-template-columns: 1fr;
       }
@@ -104,8 +108,8 @@ Hoje achei o diário que eu escrevia pra ela lá no início do nosso namoro e pe
 Foi um dia que parecia que ia desencadear uma briga do nada entre nós dois, mas dias assim acontecem, já passou.
       </div>
 
-      <!-- COLUNA DIREITA -->
-      <div class="coluna">
+      <!-- COLUNA CENTRO -->
+      <div class="coluna coluna-centro">
 Na minha cabeça eu consigo resolver os problemas dela, ou diminuir eles, então ela viajar sozinha eu fico pensando OQUE PODE ACONTECER.
 Acho que levei a serio demais quando ela me chamou de super heroi HAHAHAHAHA.
 Quero passar bastante tempo com ela nesses dias que sobram antes dela viajar, aproveitar ao máximo.
@@ -114,7 +118,18 @@ O clima hoje foi meio estranho, mas acho que foi só um dia diferente mesmo.
 Espero que a gente fique bem para aproveitarmos esses dias antes dela viajar, vai ser bem importante.
 Não quero ficar MAIS chato durante esse tempo pq não sei lidar bem com distancia, mas como tudo, estamos aprendendo.
 Quando ela voltar vou passar MUITO TEMPO com ela, acho que enjoar ela nao vai HAHAHAHA.
-nova atualização: Ciúmes sempre vai ser meu maior problema.
+Se foi mais um dia, até o next!
+      </div>
+
+      <!-- COLUNA DIREITA -->
+      <div class="coluna">
+Eu acabo pensando à toa demais as vezes
+Minha cabeça EXPLODE e não serve pra literalmente nada KKKKKKKKKKKKKKKKKK só me fodo
+Metas:
+Tentar mudar essa merda
+Terminar de aprender PHP e Python
+Terminar de estudar backend
+(uma coisa nao tem nada a ver com a outra mas necessito me virar HAHAHAHAHAHHAHA)
       </div>
 
     </div>
@@ -125,5 +140,3 @@ nova atualização: Ciúmes sempre vai ser meu maior problema.
   </footer>
 </body>
 </html>
-
-
