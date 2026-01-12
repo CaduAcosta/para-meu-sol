@@ -15,75 +15,135 @@
 }
 
 body {
-  background: #1c1c1c;
+  background: radial-gradient(circle at top, #2a2a2a, #121212);
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   line-height: 1.8;
 }
 
 main {
+  position: relative;
   max-width: 1400px;
   margin: 50px auto;
-  padding: 30px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 15px;
+  padding: 40px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
 h1, h3 {
   text-align: center;
 }
 
+h1 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
 h3 {
-  font-weight: 400;
-  opacity: 0.9;
+  font-weight: 300;
+  opacity: 0.85;
 }
 
 .divider {
-  width: 60px;
+  width: 70px;
   height: 3px;
-  background: #f2c94c;
+  background: linear-gradient(
+    90deg,
+    rgba(242,201,76,0.2),
+    rgba(242,201,76,0.9),
+    rgba(242,201,76,0.2)
+  );
   margin: 25px auto 35px;
   border-radius: 10px;
 }
 
+/* BALÃOZINHO */
+.balao {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  max-width: 230px;
+  padding: 16px 18px;
+  background: linear-gradient(
+    145deg,
+    rgba(242,201,76,0.18),
+    rgba(242,201,76,0.05)
+  );
+  border-radius: 14px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
+}
+
+.balao::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 22px;
+  width: 12px;
+  height: 12px;
+  background: rgba(242,201,76,0.12);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+/* FOTO */
+.memoria {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.memoria img {
+  max-width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+}
+
+/* DIÁRIO */
 .diario {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
+  gap: 30px;
 }
 
 .coluna {
-  padding: 25px;
-  border-radius: 12px;
+  padding: 28px;
+  border-radius: 14px;
   white-space: pre-line;
   text-align: justify;
-  background: rgba(255,255,255,0.04);
-}
-
-.coluna-centro {
-  background: rgba(242,201,76,0.07);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.coluna-centro img {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
 }
 
 @media (max-width: 1000px) {
   .diario {
     grid-template-columns: 1fr;
   }
+
+  .balao {
+    position: static;
+    margin: 0 auto 30px;
+  }
+
+  .memoria img {
+    max-width: 240px;
+  }
 }
 
 footer {
   text-align: center;
-  margin-top: 40px;
-  color: #f2c94c;
-  opacity: 0.9;
+  margin-top: 50px;
+  color: rgba(242,201,76,0.8);
+  font-size: 0.9rem;
 }
 </style>
 </head>
@@ -96,33 +156,43 @@ footer {
 
 <div class="divider"></div>
 
+<div class="balao">
+  Parecia que ela estava engasgada com tudo isso.  
+  Só quero que ela se sinta bem de verdade comigo.  
+  Eu não consigo me imaginar sem ela.  
+  Ela é, e sempre vai ser, a minha maior prioridade.
+</div>
+
+<div class="memoria">
+  <img src="./US.PNG" alt="Nós dois">
+</div>
+
 <div class="diario">
 
-<!-- COLUNA ESQUERDA -->
 <div class="coluna">
-09/01.
-Acho que esse vai ser o mais esquisito pq vou escrever sobre o que sempre escrevo, mas com ela aqui (dormindo).
-O sentimento ainda tá meio estranho por que amanhã é o dia que ela viaja e eu esperava ter passado um tempo melhor com ela.
-Hoje eu falei sobre isso umas 15h, mais ou menos, mão sei se fiz algo que ela nao gostou ou alguma coisa do tipo, mas ela quando saiu do celular só dormiu, e pelo jeito é carencia minha adhsjdhashdajsd.
-Tínhamos combinado que eu iria dormir na casa dela hoje, antes dela ir, mas pelo jeito acho q ela vai querer ir sozinha, por mais q eu queira ficar junto.
-Sinceramente nao sei mesmo o pq disso hoje, simplesmente não entendo.
+Hoje eu briguei com a Sofia, e foi estranho. Discutimos muito.  
+Mais cedo, quando começamos a conversar sobre isso, ela tocou novamente naquele assunto de não querer que eu me magoe, de não querer que eu fique chateado ou algo do tipo. Mas, pela primeira vez, ela falou que achava que eu poderia ser feliz com outra pessoa, ou algo assim.
+
+Isso foi terrível, porque eu não consigo me imaginar ao lado de outra pessoa que não seja a Sofia. De verdade. Eu imagino a gente junto por anos. Ela me faz feliz. Ela me faz me sentir bem. Ela me trouxe uma nova forma de enxergar tudo. Ela chegou em um momento em que eu mais precisava ter alguém como ela.
+
+Ela é única.  
+Ninguém pode substituir o que ela faz por mim.
 </div>
 
-<!-- COLUNA CENTRO (FOTO) -->
-<div class="coluna coluna-centro">
-  <img src="./US.PNG" alt="US">
+<div class="coluna">
+Demos uma melhorada no clima e, depois disso, brigamos novamente, porque ela achou que eu não queria falar com ela. Ela disse que iria me ligar em um certo momento, seria no banho, e eu entendi que ela ainda demoraria para chegar no hotel, que ainda iria para lá antes de me ligar.
+
+Comentei que iria até a garagem ficar com meu pai, com a minha família que estava ali. Eu não queria ir para lá e não falar com a Sofia, eu só pensei que ela iria demorar. Mas foi um mal-entendido enorme.
+
+Acho que ela se sentiu, de alguma forma, ignorada, porque depois ficou tocando muito nesse assunto: que eu não dava prioridade para ela, que ela não era a minha prioridade, que eu tinha que me esforçar mais, que eu fazia coisas que ela não gostava. E, no fim, tudo isso foi um grande mal-entendido.
 </div>
 
-<!-- COLUNA DIREITA -->
 <div class="coluna">
-Podíamos ter passado um tempo tão bom juntos, e eu insisti muito pra isso, muito mesmo.
-Parei quando eu vi que realmente nao tinha mais oq eu pudesse falar, e sem qrer comecei a chorar -_- 
-Enfim, ela demonstra muitas coisas ao mesmo tempo, ultimamente ta tudo meio estranho. 
-Só queria resolver isso e aproveitar um tempo melhor, ela deve sentir isso tambem. Mas deve ter um motivo...
-Vai só aumentar a saudade q vms sentir...
-Talvez ela esteja sentindo algo...
-Enfim, Eu amo ela, só quero que fiquemos bem e se foi mais um dia.
+Ela é a minha prioridade. Eu dedico a maior parte do meu tempo a ela, não por obrigação, mas porque eu a amo e acho que realmente vale o esforço. Ela me falou tudo isso hoje, e parecia algo que estava engasgado dentro dela.
 
+Tenho medo de estar fazendo mal a ela de alguma forma. Mas a Sofia é o grande amor da minha vida, e eu não aceito perdê-la. Espero que ela enxergue que eu a amo de verdade e que tudo isso foi um mal-entendido.
+
+Esses dias de distância vão doer, porque já estão doendo. Mas eu sei que vamos passar por isso. A distância só vai provar que o nosso amor é de verdade. Quero que ela se sinta segura, bem e feliz ao meu lado. Eu a amo e sempre vou amá-la.
 </div>
 
 </div>
@@ -134,6 +204,3 @@ De Caduco.
 
 </body>
 </html>
-
-
-
