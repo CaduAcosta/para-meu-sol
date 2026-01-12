@@ -15,129 +15,86 @@
 }
 
 body {
-  background: radial-gradient(circle at top, #2a2a2a, #121212);
+  background: #1c1c1c;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   line-height: 1.8;
 }
 
 main {
-  position: relative;
   max-width: 1400px;
   margin: 50px auto;
-  padding: 40px;
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,0.06),
-    rgba(255,255,255,0.02)
-  );
-  border-radius: 18px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  padding: 40px 30px 60px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  position: relative;
 }
 
 h1, h3 {
   text-align: center;
 }
 
-h1 {
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
 h3 {
-  font-weight: 300;
-  opacity: 0.85;
+  font-weight: 400;
+  opacity: 0.9;
 }
 
 .divider {
-  width: 70px;
+  width: 60px;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    rgba(242,201,76,0.2),
-    rgba(242,201,76,0.9),
-    rgba(242,201,76,0.2)
-  );
-  margin: 25px auto 35px;
+  background: #f2c94c;
+  margin: 25px auto 45px;
   border-radius: 10px;
 }
 
 /* BALÕES */
 .balao {
   position: absolute;
-  max-width: 240px;
-  padding: 16px 18px;
-  background: linear-gradient(
-    145deg,
-    rgba(242,201,76,0.18),
-    rgba(242,201,76,0.05)
-  );
-  border-radius: 14px;
+  max-width: 260px;
+  padding: 14px 16px;
+  background: rgba(242,201,76,0.12);
+  border-radius: 12px;
   font-size: 0.85rem;
   line-height: 1.5;
-  color: #ffffff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
-  backdrop-filter: blur(4px);
+  color: #f5e7b2;
 }
 
-.balao::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  width: 12px;
-  height: 12px;
-  background: rgba(242,201,76,0.12);
-  transform: rotate(45deg);
-  border-radius: 2px;
+.balao.esquerda {
+  top: 20px;
+  left: 20px;
 }
 
-/* posições */
-.balao-direita {
-  top: 30px;
-  right: 30px;
-}
-
-.balao-direita::after {
-  right: 22px;
-}
-
-.balao-esquerda {
-  top: 30px;
-  left: 30px;
-}
-
-.balao-esquerda::after {
-  left: 22px;
-}
-
-/* FOTO */
-.memoria {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.memoria img {
-  max-width: 320px;
-  border-radius: 16px;
-  box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+.balao.direita {
+  top: 20px;
+  right: 20px;
 }
 
 /* DIÁRIO */
 .diario {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 25px;
 }
 
 .coluna {
-  padding: 28px;
-  border-radius: 14px;
+  padding: 25px;
+  border-radius: 12px;
   white-space: pre-line;
   text-align: justify;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(4px);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.04);
+}
+
+/* FOTO */
+.foto-centro {
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.foto-centro img {
+  max-width: 380px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
 }
 
 @media (max-width: 1000px) {
@@ -147,80 +104,79 @@ h3 {
 
   .balao {
     position: static;
-    margin: 0 auto 25px;
-  }
-
-  .memoria img {
-    max-width: 240px;
+    margin: 10px auto 20px;
   }
 }
 
 footer {
   text-align: center;
-  margin-top: 50px;
-  color: rgba(242,201,76,0.8);
-  font-size: 0.9rem;
+  margin-top: 40px;
+  color: #f2c94c;
+  opacity: 0.9;
 }
 </style>
 </head>
 
 <body>
+
 <main>
 
-<h1>Desabafos do caduco para caduco</h1>
-<h3>11/01</h3>
-
-<div class="divider"></div>
-
 <!-- BALÃO ESQUERDO -->
-<div class="balao balao-esquerda">
-  Na terça-feira, dia 13, vamos fazer cinco meses de namoro.  
-  Eu só quero que o clima não esteja tão ruim entre a gente.  
-  Quero que essa data seja marcada por mais um dia em que estivemos felizes um com o outro, mesmo longe.
+<div class="balao esquerda">
+Na terça-feira, dia 13, vamos fazer cinco meses de namoro.
+Eu só quero que o clima não esteja tão ruim entre a gente.
+Quero que essa data seja marcada por mais um dia em que estivemos felizes juntos, mesmo longe.
 </div>
 
 <!-- BALÃO DIREITO -->
-<div class="balao balao-direita">
-  Não quero que ela pense tanta coisa ruim de mim.  
-  Parecia que ela estava engasgada com tudo isso.  
-  Só quero que ela se sinta bem de verdade comigo.  
-  Eu não consigo me imaginar sem ela.  
-  Ela é, e sempre vai ser, a minha maior prioridade.
+<div class="balao direita">
+Não quero que ela pense tanta coisa ruim de mim.
+Parecia que ela estava engasgada com tudo isso.
+Só quero que ela se sinta bem comigo.
+Ela é muito importante pra mim.
 </div>
 
-<div class="memoria">
-  <img src="./US.PNG" alt="Nós dois">
-</div>
+<h1>Desabafos do caduco para caduco</h1>
+<h3>09/01</h3>
+
+<div class="divider"></div>
 
 <div class="diario">
 
+<!-- COLUNA ESQUERDA -->
 <div class="coluna">
-Hoje eu briguei com a Sofia, e foi estranho. Discutimos muito.  
-Mais cedo, quando começamos a conversar sobre isso, ela tocou novamente naquele assunto de não querer que eu me magoe, de não querer que eu fique chateado ou algo do tipo. Mas, pela primeira vez, ela falou que achava que eu poderia ser feliz com outra pessoa.
+Hoje eu briguei com a Sofia e foi estranho, discutimos muito. Mais cedo, quando começamos a discutir, ela tocou novamente no assunto de que não quer que eu me magoe e que não quer que eu fique chateado ou algo do tipo. Mas, pela primeira vez, ela falou em achar que eu poderia ser feliz com outra pessoa.
 
-Isso foi terrível, porque eu não consigo me imaginar ao lado de outra pessoa que não seja a Sofia. Eu imagino a gente junto por anos. Ela me faz feliz. Ela me faz me sentir bem. Ela me trouxe uma nova forma de enxergar tudo. Ela chegou em um momento em que eu mais precisava ter alguém como ela.
+Isso foi estranho de ouvir, porque eu gosto muito do que a gente tem. Eu consigo imaginar a gente por anos juntos. Ela me faz feliz. Ela me faz me sentir bem. Ela me trouxe uma nova forma de enxergar tudo. Ela chegou em um momento em que eu mais precisava ter alguém como ela.
 
-Ela é única.  
-Ninguém pode substituir o que ela faz por mim.
+Ela é única. O que ela faz por mim e comigo é algo muito nosso.
 </div>
 
+<!-- COLUNA MEIO -->
 <div class="coluna">
-Demos uma melhorada no clima e, depois disso, brigamos novamente, porque ela achou que eu não queria falar com ela. Ela disse que iria me ligar em um certo momento, seria no banho, e eu entendi que ela ainda demoraria para chegar no hotel.
+Demos uma melhorada no clima e depois brigamos novamente, porque ela achou que eu não queria falar com ela. Ela disse que iria me ligar em um certo momento, seria no banho, e eu entendi que ela ainda demoraria para chegar no hotel, que ainda iria para lá antes de me ligar.
 
-Comentei que iria até a garagem ficar com meu pai, com a minha família que estava ali. Eu não queria ir para lá e não falar com a Sofia, eu só pensei que ela iria demorar. Mas foi um mal-entendido enorme.
+Comentei que iria até a garagem ficar com meu pai, com a minha família que estava ali. Eu não queria ir para lá e não falar com a Sofia, eu só pensei que ela iria demorar. Mas foi um mal-entendido grande.
 
-Acho que ela se sentiu ignorada, de alguma forma, porque depois ficou tocando muito nesse assunto: que eu não dava prioridade para ela, que ela não era a minha prioridade, que eu precisava me esforçar mais. No fim, tudo isso foi um grande mal-entendido.
+Acho que ela acabou se sentindo ignorada, porque depois ficou tocando nesse assunto, que eu não dava prioridade para ela, que ela não era minha prioridade, que eu precisava me esforçar mais. No fim, tudo isso foi um grande mal-entendido.
 </div>
 
+<!-- COLUNA DIREITA -->
 <div class="coluna">
-Ela é a minha prioridade. Eu dedico a maior parte do meu tempo a ela porque eu a amo e acho que realmente vale o esforço.
+Ela é a minha prioridade. Eu dedico a maior parte do meu tempo pra ela, não por obrigação ou algo do tipo, mas porque eu amo ela e acho que realmente vale o esforço. Ela me falou tudo isso hoje e parece que era algo que estava engasgado com ela.
 
-Tenho medo de estar fazendo mal a ela de alguma forma. Mas a Sofia é o grande amor da minha vida e eu não aceito perdê-la. Esses dias de distância já estão doendo, mas eu sei que vamos passar por isso.
+Tenho medo de ela estar se sentindo mal comigo e de eu estar fazendo mal pra ela de alguma forma. Mas a Sofia é o grande amor da minha vida e eu espero que ela enxergue isso. Espero que ela não queira se afastar de mim e que veja que tudo isso foi um mal-entendido.
 
-Quero que ela se sinta segura, bem e feliz ao meu lado. Eu a amo e sempre vou amá-la.
+Esses dias que ela está distante vão doer, porque já estão doendo. Já está sendo estranho. Mesmo quando a gente ficava dois ou três dias sem se ver, saber que ela está longe é diferente. Mas eu acredito que a gente vai passar por isso. Quero que ela se sinta bem, segura e feliz ao meu lado.
 </div>
 
 </div>
+
+<!-- FOTO -->
+<div class="foto-centro">
+  <img src="./US.PNG" alt="Nós">
+</div>
+
 </main>
 
 <footer>
@@ -229,4 +185,3 @@ De Caduco.
 
 </body>
 </html>
-
