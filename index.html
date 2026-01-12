@@ -62,12 +62,10 @@ h3 {
   border-radius: 10px;
 }
 
-/* BALÃOZINHO */
+/* BALÕES */
 .balao {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  max-width: 230px;
+  max-width: 240px;
   padding: 16px 18px;
   background: linear-gradient(
     145deg,
@@ -86,12 +84,30 @@ h3 {
   content: "";
   position: absolute;
   bottom: -6px;
-  right: 22px;
   width: 12px;
   height: 12px;
   background: rgba(242,201,76,0.12);
   transform: rotate(45deg);
   border-radius: 2px;
+}
+
+/* posições */
+.balao-direita {
+  top: 30px;
+  right: 30px;
+}
+
+.balao-direita::after {
+  right: 22px;
+}
+
+.balao-esquerda {
+  top: 30px;
+  left: 30px;
+}
+
+.balao-esquerda::after {
+  left: 22px;
 }
 
 /* FOTO */
@@ -131,7 +147,7 @@ h3 {
 
   .balao {
     position: static;
-    margin: 0 auto 30px;
+    margin: 0 auto 25px;
   }
 
   .memoria img {
@@ -152,11 +168,20 @@ footer {
 <main>
 
 <h1>Desabafos do caduco para caduco</h1>
-<h3>11/01</h3>
+<h3>09/01</h3>
 
 <div class="divider"></div>
 
-<div class="balao">
+<!-- BALÃO ESQUERDO -->
+<div class="balao balao-esquerda">
+  Na terça-feira, dia 13, vamos fazer cinco meses de namoro.  
+  Eu só quero que o clima não esteja tão ruim entre a gente.  
+  Quero que essa data seja marcada por mais um dia em que estivemos felizes um com o outro, mesmo longe.
+</div>
+
+<!-- BALÃO DIREITO -->
+<div class="balao balao-direita">
+  Não quero que ela pense tanta coisa ruim de mim.  
   Parecia que ela estava engasgada com tudo isso.  
   Só quero que ela se sinta bem de verdade comigo.  
   Eu não consigo me imaginar sem ela.  
@@ -171,28 +196,28 @@ footer {
 
 <div class="coluna">
 Hoje eu briguei com a Sofia, e foi estranho. Discutimos muito.  
-Mais cedo, quando começamos a conversar sobre isso, ela tocou novamente naquele assunto de não querer que eu me magoe, de não querer que eu fique chateado ou algo do tipo. Mas, pela primeira vez, ela falou que achava que eu poderia ser feliz com outra pessoa, ou algo assim.
+Mais cedo, quando começamos a conversar sobre isso, ela tocou novamente naquele assunto de não querer que eu me magoe, de não querer que eu fique chateado ou algo do tipo. Mas, pela primeira vez, ela falou que achava que eu poderia ser feliz com outra pessoa.
 
-Isso foi terrível, porque eu não consigo me imaginar ao lado de outra pessoa que não seja a Sofia. De verdade. Eu imagino a gente junto por anos. Ela me faz feliz. Ela me faz me sentir bem. Ela me trouxe uma nova forma de enxergar tudo. Ela chegou em um momento em que eu mais precisava ter alguém como ela.
+Isso foi terrível, porque eu não consigo me imaginar ao lado de outra pessoa que não seja a Sofia. Eu imagino a gente junto por anos. Ela me faz feliz. Ela me faz me sentir bem. Ela me trouxe uma nova forma de enxergar tudo. Ela chegou em um momento em que eu mais precisava ter alguém como ela.
 
 Ela é única.  
 Ninguém pode substituir o que ela faz por mim.
 </div>
 
 <div class="coluna">
-Demos uma melhorada no clima e, depois disso, brigamos novamente, porque ela achou que eu não queria falar com ela. Ela disse que iria me ligar em um certo momento, seria no banho, e eu entendi que ela ainda demoraria para chegar no hotel, que ainda iria para lá antes de me ligar.
+Demos uma melhorada no clima e, depois disso, brigamos novamente, porque ela achou que eu não queria falar com ela. Ela disse que iria me ligar em um certo momento, seria no banho, e eu entendi que ela ainda demoraria para chegar no hotel.
 
 Comentei que iria até a garagem ficar com meu pai, com a minha família que estava ali. Eu não queria ir para lá e não falar com a Sofia, eu só pensei que ela iria demorar. Mas foi um mal-entendido enorme.
 
-Acho que ela se sentiu, de alguma forma, ignorada, porque depois ficou tocando muito nesse assunto: que eu não dava prioridade para ela, que ela não era a minha prioridade, que eu tinha que me esforçar mais, que eu fazia coisas que ela não gostava. E, no fim, tudo isso foi um grande mal-entendido.
+Acho que ela se sentiu ignorada, de alguma forma, porque depois ficou tocando muito nesse assunto: que eu não dava prioridade para ela, que ela não era a minha prioridade, que eu precisava me esforçar mais. No fim, tudo isso foi um grande mal-entendido.
 </div>
 
 <div class="coluna">
-Ela é a minha prioridade. Eu dedico a maior parte do meu tempo a ela, não por obrigação, mas porque eu a amo e acho que realmente vale o esforço. Ela me falou tudo isso hoje, e parecia algo que estava engasgado dentro dela.
+Ela é a minha prioridade. Eu dedico a maior parte do meu tempo a ela porque eu a amo e acho que realmente vale o esforço.
 
-Tenho medo de estar fazendo mal a ela de alguma forma. Mas a Sofia é o grande amor da minha vida, e eu não aceito perdê-la. Espero que ela enxergue que eu a amo de verdade e que tudo isso foi um mal-entendido.
+Tenho medo de estar fazendo mal a ela de alguma forma. Mas a Sofia é o grande amor da minha vida e eu não aceito perdê-la. Esses dias de distância já estão doendo, mas eu sei que vamos passar por isso.
 
-Esses dias de distância vão doer, porque já estão doendo. Mas eu sei que vamos passar por isso. A distância só vai provar que o nosso amor é de verdade. Quero que ela se sinta segura, bem e feliz ao meu lado. Eu a amo e sempre vou amá-la.
+Quero que ela se sinta segura, bem e feliz ao meu lado. Eu a amo e sempre vou amá-la.
 </div>
 
 </div>
@@ -204,4 +229,3 @@ De Caduco.
 
 </body>
 </html>
-
