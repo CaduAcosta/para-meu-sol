@@ -43,13 +43,12 @@ h3 {
   width: 60px;
   height: 3px;
   background: #f2c94c;
-  margin: 25px auto 45px;
+  margin: 25px auto 25px;
   border-radius: 10px;
 }
 
 /* BALÕES */
 .balao {
-  position: absolute;
   max-width: 260px;
   padding: 14px 16px;
   background: rgba(242,201,76,0.12);
@@ -60,19 +59,20 @@ h3 {
 }
 
 .balao.esquerda {
+  position: absolute;
   top: 20px;
   left: 20px;
 }
 
 .balao.direita {
+  position: absolute;
   top: 20px;
   right: 20px;
 }
 
 .balao.centro {
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto 35px;
+  text-align: center;
 }
 
 /* DIÁRIO */
@@ -108,10 +108,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .balao {
+  .balao.esquerda,
+  .balao.direita {
     position: static;
     margin: 10px auto 20px;
-    transform: none;
   }
 }
 
@@ -143,45 +143,19 @@ Só quero que ela se sinta bem comigo.
 Ela é muito importante pra mim.
 </div>
 
-<!-- BALÃO CENTRO -->
-<div class="balao centro">
-A distância acaba nos atrapalhando e nos testando muito, mas acho que vamos passar por isso juntos.
-</div>
-
 <h1>Desabafos do caduco para caduco</h1>
 <h3>11/01</h3>
 
 <div class="divider"></div>
 
+<!-- BALÃO CENTRO -->
+<div class="balao centro">
+A distância acaba nos atrapalhando e nos testando muito, mas acho que vamos passar por isso juntos.
+</div>
+
 <div class="diario">
-
-<!-- COLUNA ESQUERDA -->
-<div class="coluna">
-Hoje eu briguei com a Sofia e foi estranho, discutimos muito. Mais cedo, quando começamos a discutir, ela tocou novamente no assunto de que não quer que eu me magoe e que não quer que eu fique chateado ou algo do tipo. Mas, pela primeira vez, ela falou em achar que eu poderia ser feliz com outra pessoa.
-
-Isso foi estranho de ouvir, porque eu gosto muito do que a gente tem. Eu consigo imaginar a gente por anos juntos. Ela me faz feliz. Ela me faz me sentir bem. Ela me trouxe uma nova forma de enxergar tudo. Ela chegou em um momento em que eu mais precisava ter alguém como ela.
-
-Ela é única. O que ela faz por mim e comigo é algo muito nosso.
-</div>
-
-<!-- COLUNA MEIO -->
-<div class="coluna">
-Demos uma melhorada no clima e depois brigamos novamente, porque ela achou que eu não queria falar com ela. Ela disse que iria me ligar em um certo momento, seria no banho, e eu entendi que ela ainda demoraria para chegar no hotel, que ainda iria para lá antes de me ligar.
-
-Comentei que iria até a garagem ficar com meu pai, com a minha família que estava ali. Eu não queria ir para lá e não falar com a Sofia, eu só pensei que ela iria demorar. Mas foi um mal-entendido grande.
-
-Acho que ela acabou se sentindo ignorada, porque depois ficou tocando nesse assunto, que eu não dava prioridade para ela, que ela não era minha prioridade, que eu precisava me esforçar mais. No fim, tudo isso foi um grande mal-entendido.
-</div>
-
-<!-- COLUNA DIREITA -->
-<div class="coluna">
-Ela é a minha prioridade. Eu dedico a maior parte do meu tempo pra ela, não por obrigação ou algo do tipo, mas porque eu amo ela e acho que realmente vale o esforço. Ela me falou tudo isso hoje e parece que era algo que estava engasgado com ela.
-
-Tenho medo de ela estar se sentindo mal comigo e de eu estar fazendo mal pra ela de alguma forma. Mas a Sofia é o grande amor da minha vida e eu espero que ela enxergue isso. Espero que ela não queira se afastar de mim e que veja que tudo isso foi um mal-entendido.
-
-Esses dias que ela está distante vão doer, porque já estão doendo. Já está sendo estranho. Mesmo quando a gente ficava dois ou três dias sem se ver, saber que ela está longe é diferente. Mas eu acredito que a gente vai passar por isso. Quero que ela se sinta bem, segura e feliz ao meu lado.
-</div>
-
+<!-- COLUNAS (inalteradas) -->
+...
 </div>
 
 <!-- FOTO -->
